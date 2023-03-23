@@ -1,0 +1,51 @@
+{
+  "name": "mejorar-arquitectura-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "",
+  "author": "Jose gomez <100965428+JosemGR02@users.noreply.github.com>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "0x src/app.js",
+    "test": "node src/benchmark.js",
+    "dev": "set NODE_ENV=Desarrollo && set LOGGER_MODO=DEV && nodemon src/app.js",
+    "prod": "set NODE_ENV=Produccion && set LOGGER_MODO=PROD && node src/app.js",
+    "cross": "cross-env set LOGGER_MODO=PROD && node src/app.js",
+    "mocha": "mocha src/test/mocha.test.js --timeout 10000",
+    "jest": "set NODE_JEST= --experimental-vm-modules && jest --detectOpenHandles"
+  },
+  "dependencies": {
+    "autocannon": "^7.10.0",
+    "bcryptjs": "^2.4.3",
+    "connect-mongo": "^4.6.0",
+    "cookie-parser": "^1.4.6",
+    "delay": "^5.0.0",
+    "dotenv": "^16.0.3",
+    "esm": "^3.2.25",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.7",
+    "express-session": "^1.17.3",
+    "joi": "^17.8.1",
+    "moment": "^2.29.4",
+    "mongoose": "^6.9.1",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.1",
+    "os": "^0.1.2",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "rxjs": "^7.8.0",
+    "sweetalert": "^2.1.2",
+    "twilio": "^4.8.0",
+    "winston": "^3.8.2",
+    "yargs": "^17.6.2"
+  },
+  "devDependencies": {
+    "axios": "^0.24.0",
+    "chai": "^4.3.7",
+    "jest": "^29.4.3",
+    "mocha": "^10.2.0",
+    "nodemon": "^2.0.20",
+    "supertest": "^6.3.3"
+  }
+}

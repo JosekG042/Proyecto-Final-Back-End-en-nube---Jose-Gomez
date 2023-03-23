@@ -1,0 +1,20 @@
+<div>
+    <div>
+        <h2> PAGINA INFORMACION </h2>
+        <ul>
+            <li>Argumento de entrada: {{datos.argumentosEntrada}}</li>
+            <li>Path de ejecución: {{datos.pathEjecucion}}</li>
+            <li>Nombre de la plataforma: {{datos.nombrePlataforma}}</li>
+            <li>Process Id: {{datos.processId}}</li>
+            <li>Version de Node: {{datos.versionNode}}</li>
+            <li>Carpeta del proyecto: {{datos.carpetaDeProyecto}}</li>
+            <li>Memoria reservada: {{datos.memoriaTotalReservada}}</li>
+            <li>Nro Procesadores del servidor: {{datos.procesadoresdCpus}}</li>
+        </ul>
+    </div>
+    <div>
+        <button class="btn btn-primary" onclick="location.href='/api/randoms/'">Ir a pagina de Nros randoms</button>
+        <br>
+        <button class="btn btn-secondary" onclick="location.href='/api/carrito/compra'">Ir a pagina de Carrito</button>
+    </div>
+</div>

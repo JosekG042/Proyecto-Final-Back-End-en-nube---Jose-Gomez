@@ -1,0 +1,17 @@
+<div>
+    <div>
+        <h2> PAGINA INFO DEL SERVIDOR </h2>
+        <br>
+        <ul>
+            <li>Servidor express iniciado en el puerto: {{datos.puerto}}</li>
+            <li>Fecha: {{datos.fecha}}</li>
+            <li>ID del Proceso: {{datos.pid}}</li>
+            <li>Tiempo expiracion de sesion: {{datos.ttl}}</li>
+        </ul>
+    </div>
+    <div>
+        <button class="btn btn-success" onclick="location.href='/api/info/'">Ir pagina de informacion</button>
+        <br>
+        <button class="btn btn-primary" onclick="location.href='/api/randoms/'">Ir a pagina de Nros randoms</button>
+    </div>
+</div>

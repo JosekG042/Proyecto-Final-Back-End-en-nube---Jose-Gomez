@@ -1,0 +1,164 @@
+        
+/*======================================================================================================================*/
+/*                                  <~~~~~~~~| Problemas y Dudas TXT |~~~~~~~~>                                         */
+/*======================================================================================================================*/
+
+
+-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-
+
+		    |>|==============| Desafio clase 36: Tercer Entrega Proyecto |================|<|  
+
+
+REPO:   [ https://github.com/JosemGR02/desafio-C36--Tercera-Entrega-Proyecto-Final.git ]
+
+
+========| En Carritos (Controlador):
+
+problemas con los controladores de productos y carritos (en prod: actualizar, eliminar y eliminar todos, en carrito crear y ver si me andan las otras)
+
+falta terminar funcionalidad procesar compra, 
+
+Tambien las demas mensajerias (cuando hice la prueba de envio de SMS, whatsapp y email no pude) :(
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+========| En Vistas:
+
+Me queda por hacer que funque lo de los productos de carrito, en vistas cart (falta terminar y que funcione bien la funcionalidad contenedor)
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+########################################################################################################################
+
+
+-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-
+
+		|>|==============| Desafio clase 42: Testeamos nuestra API REST |================|<|  
+
+
+REPO:   [ https://github.com/JosemGR02/desafio-C42--testeamos-nuestra-API-REST.git ]
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+        ===========| Problema para correr los Tests: (con mocha y jest)
+
+
+x los problemas que no me reconoce loas clase sno puedo llegar a correr los tests
+
+
+
+===========|  JEST:
+
+
+    Jest no ha podido analizar un archivo. Esto ocurre, por ejemplo, cuando su código o sus dependencias utilizan sintaxis JavaScript no estándar, o cuando Jest no está configurado para soportar dicha sintaxis.
+
+    Por defecto, Jest soporta Babel, que se utilizará para transformar sus archivos en JS válido basado en su configuración de Babel.
+
+    Por defecto la carpeta "node_modules" es ignorada por los transformadores.
+
+    Esto es lo que puedes hacer:
+     - Si estás intentando usar Módulos ECMAScript, consulta https://jestjs.io/docs/ecmascript-modules para saber cómo habilitarlo.
+     - Si estás intentando utilizar TypeScript, consulta https://jestjs.io/docs/getting-started#using-typescript.
+     - Para tener algunos de tus archivos "node_modules" transformados, puedes especificar un "transformIgnorePatterns" personalizado en tu config.
+     - Si necesitas una transformación personalizada, especifica una opción "transform" en tu configuración.
+     - Si lo que desea es simplemente imitar los módulos que no son JS (por ejemplo, activos binarios), puede eliminarlos con la opción de configuración "moduleNameMapper".
+
+    Encontrarás más detalles y ejemplos de estas opciones de configuración en la documentación:
+    https://jestjs.io/docs/configuration
+    Para obtener información sobre las transformaciones personalizadas, consulte
+    https://jestjs.io/docs/code-transformation
+
+    Detalles:
+
+    C:\Users\User\Documents\Back End\Back End DESAFIOS\modulo 3\desafio-C42- testeamos nuestra API REST\src\test\mocha.test.js:3
+    import request from 'supertest';
+    ^^^^^^
+
+    SyntaxError: No se puede usar la sentencia import fuera de un módulo
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1495:14)
+
+ FAIL src/test/jest.test.js
+  ● No se ha podido ejecutar el conjunto de pruebas
+                                                                                                                                                              
+    Jest encontró un token inesperado
+
+    Jest falló al analizar un archivo. Esto ocurre, por ejemplo, cuando su código o sus dependencias utilizan sintaxis JavaScript no estándar, o cuando Jest no está configurado para soportar dicha sintaxis.
+
+    Jest soporta Babel, que se utilizará para transformar sus archivos en JS válido basado en su configuración de Babel.
+
+    Por defecto la carpeta "node_modules" es ignorada por los transformadores.
+
+    Esto es lo que puedes hacer:
+     - Si estás intentando usar Módulos ECMAScript, consulta https://jestjs.io/docs/ecmascript-modules para saber cómo habilitarlo.
+     - Si estás intentando utilizar TypeScript, consulta https://jestjs.io/docs/getting-started#using-typescript.
+     - Para tener algunos de tus archivos "node_modules" transformados, puedes especificar un "transformIgnorePatterns" personalizado en tu config.
+     - Si necesitas una transformación personalizada, especifica una opción "transform" en tu configuración.
+     - Si lo que desea es simplemente imitar los módulos que no son JS (por ejemplo, activos binarios), puede eliminarlos con la opción de configuración "moduleNameMapper".
+
+    Encontrarás más detalles y ejemplos de estas opciones de configuración en la documentación:
+    https://jestjs.io/docs/configuration
+    Para obtener información sobre las transformaciones personalizadas, consulte
+    https://jestjs.io/docs/code-transformation
+
+    Detalles:
+
+    C:\Users\User\Documents\Back End\Back End DESAFIOS\modulo 3\desafio-C42- testeamos nuestra API REST\src\test\jest.test.js:3
+    import request from 'supertest';
+    ^^^^^^
+
+    SyntaxError: No se puede usar la sentencia import fuera de un módulo
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1495:14)
+
+Pruebas: 2 fallidas, 2 en total                                                                                                                                
+Pruebas:       0 total                                                                                                                                          
+Instantáneas:   0 total
+Tiempo: 2.186 s
+Ejecutadas todas las pruebas.
+error El comando falló con el código de salida 1.
+info Visite https://yarnpkg.com/en/docs/cli/run para obtener documentación sobre este comando.
+
+Traducción realizada con la versión gratuita del traductor www.DeepL.com/Translator
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+########################################################################################################################
+
+
+-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-
+
+		|>|==============| Desafio clase 44: Reformar para usar GraphQL |================|<|  
+
+
+REPO:   [ https://github.com/JosemGR02/desafio-C44--Reformar-para-usar-Graphql.git ]
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+#########################################################################################################################
+
+
+-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-
+
+                                                ACLARACION:   
+                            POR AHI ME ESTOY OLVIDANDO DE UNA, PERO MAÑANA ME FIJO BIEN 
+                            Y TE LO DIGO, ADEMAS DE LO "Tengo algunas mas de Test".
+
+-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-~o~-
+
+
+

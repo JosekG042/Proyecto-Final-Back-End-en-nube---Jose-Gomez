@@ -1,0 +1,33 @@
+
+<div>
+    <h2> PAGINA NUMEROS RANDOMS </h2>
+    <div>
+        <h3>Ir a otras paginas:</h3>
+        <br>
+        <button class="btn btn-success" onclick="location.href='/api/carrito/compra'">Ir a pagina de Carrito</button>
+        <br>
+        <button class="btn btn-success" onclick="location.href='/api/info/'">Ir pagina de informacion</button>
+    </div>
+    <div>
+        <h3>Numeros Randoms Generados:</h3>
+        <br>
+        {{#if resultadoUtils}}
+            <table>
+                <tr>
+                    <th>Número</th>
+                    <th>Veces que se repitio</th>
+                </tr>
+                {{#each resultadoUtils}}
+                    <tr>
+                        <td>{{@key}}</td>
+                        <td>{{this}}</td>
+                    </tr>
+                {{/each}}
+            </table>
+        {{/if}}
+    </div>
+</div>
+
+
+
+

@@ -1,0 +1,73 @@
+<div>
+    <h2> PAGINA CARRITO </h2>
+    <div>
+        <div>
+            <h1>Mi Carrito: </h1>
+            <ul>
+                {{#if datosCarrito}}
+                <li>{{datosCarrito}}</li>
+                {{!-- {{#each datosCarrito}}
+                <li>{{this}}</li>
+                {{/each}} --}}
+                {{/if}}
+            </ul>
+        </div>
+        <div>
+            <h1>listado de los productos del carrito: </h1>
+            <ul>
+                {{#if todosProductos}}
+                {{#each todosProductos}}
+                <li>{{this}}</li>
+                {{/each}}
+                {{/if}}
+            </ul>
+        </div>
+        <button>agregar producto al carrito</button> ir ruta guardarprodCart
+        <button>eliminar producto el carrito</button> ir ruta eliminarprodCarritoXid
+        <button>eliminar todos los productos del carrito</button> ir ruta eliminartodoscarrito
+        <br>
+        <div>
+            <h3 class="titulo">Productos disponibles:</h3>
+            <div class="nuevoProducto" id="contenedorProductos"></div>
+        </div>
+        <br>
+        <div>
+            <h3 class="titulo">Buscar un producto por su categoria:</h3>
+            <button class="btn btn-secondary" onclick="location.href='/api/productos/:categoria'">
+                Guardar un producto al carrito
+            </button>
+            <div class="productoCategoria" id="contenedorProdsCategoria">
+                <ul>
+                    {{#if prodXcategoria}}
+                    {{#each prodXcategoria}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                    {{/if}}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div>
+        {{!-- (id productos x body) --}}
+        <button class="btn btn-secondary" onclick="location.href='/api/carrito/{{idCarrito}}'">
+            Guardar un producto al carrito
+        </button>
+        <br>
+        <button class="btn btn-secondary" onclick="location.href='/api/carrito/compra/{{idCarrito}}'">
+            Procesar pedido de compra
+        </button>
+    </div>
+</div>
+
+
+
+{{!--
+Eliminar un producto del Carrito x id
+<button class="btn btn-secondary" onclick="location.href='/api/carrito/{{idCarrito}}/productos/{{idProducto}}'">
+    Eliminar producto del carrito
+</button>
+Eliminar todos productos del Carrito
+<button class="btn btn-secondary" onclick="location.href='/api/carrito/{{idCarrito}}/productos/'">
+    Vaciar todo el carrito
+</button>
+--}}

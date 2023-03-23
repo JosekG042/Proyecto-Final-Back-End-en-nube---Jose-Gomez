@@ -1,0 +1,27 @@
+<div>
+    <h2 class="titulo"> PAGINA FABRICA DE PRODUCTOS ONLINE</h2>
+    <div>
+        <h3 class="titulo">Ingrese los datos correspondientes para crear el producto</h3>
+        <br>
+        <div class="nuevoProducto">
+            <form id="formularioProds">
+                <input type="text" name="titulo" placeholder="Titulo" class="nuevoProd_input" required />
+                <input type="number" name="precio" placeholder="Precio" class="nuevoProd_input" required />
+                <input type="file" name="imagen" placeholder="Enlace imagen" class="nuevoProd_input" required />
+                <input type="text" name="codigo" placeholder="Código" class="nuevoProd_input" required />
+                <input type="text" name="descripcion" placeholder="Descripción" class="nuevoProd_input" required />
+                <input type="number" name="stock" placeholder="stock" class="nuevoProd_input" required />
+                <input type="number" name="cantidad" placeholder="cantidad" class="nuevoProd_input" required />
+                <button type="submit" id="nuevoProd_input">Guardar Producto</button>
+            </form>
+        </div>
+        <br>
+        <h3 class="titulo">Productos:</h3>
+        <div class="nuevoProducto" id="contenedorProductos"></div>
+    </div>
+    <div>
+        <button class="btn btn-secondary" onclick="location.href='/api/carrito/'">
+            Ir a pagina de Carrito
+        </button>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+<div>
+    <h2> PAGINA INICIO </h2>
+    <br>
+    <div class="usuario">
+        <h3 class="alert alert-info" role="alert">¡Bienvenido, estas registrado con el email: {{email}}, ¡Esperamos que
+            disfrutes de tu estadía en nuestra pagina!</h3>
+        <br>
+        <div>
+            <h3> DATOS DEL USUARIO: </h3>
+            <ul>
+                <li><img src="images/gfg.png"></li>
+                <li>{{usuario.avatar}}</li>
+                <li>Nombre: {{usuario.nombre}}</li>
+                <li>Email: {{usuario.email}}</li>
+                <li>Edad: {{usuario.edad}}</li>
+                <li>Telefono: {{usuario.telefono}}</li>
+                <li>Direccion: {{usuario.direccion}}</li>
+                <li>Contraseña: {{usuario.contrasena}}</li>
+                <li>Id del carrito: {{carritoID}}</li>
+            </ul>
+        </div>
+        <br>
+        <div>
+            <button class="btn btn-danger" onclick="location.href='/api/autenticacion/logout'">Cerrar Sesion</button>
+            <br>
+            <button class="btn btn-secondary" onclick="location.href='/api/carrito/'">
+                Ir a pagina de Carrito
+            </button>
+            <br>
+            <button class="btn btn-danger" onclick="location.href='/api/chat/'"> Ir a pagina de Chat </button>
+        </div>
+    </div>
+</div>
+
+
+procesar compra
+
+eliminar productos del carrito
+guardar productos al carrito
